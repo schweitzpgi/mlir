@@ -46,6 +46,8 @@ set(MLIR_CUDA_RUNNER_ENABLED 0 CACHE BOOL "Enable building the mlir CUDA runner"
 
 include_directories( "include")
 include_directories( ${MLIR_INCLUDE_DIR})
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/include/mlir)
+include_directories( ${MLIR_INCLUDE_DIR}/mlir)
 
 add_subdirectory(include/mlir)
 add_subdirectory(lib)
